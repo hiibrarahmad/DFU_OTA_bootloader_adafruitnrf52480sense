@@ -1,0 +1,803 @@
+Microsoft Windows [Version 10.0.26100.4652]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\dfu nrf52840>cd "D:\dfu nrf52840"
+
+D:\dfu nrf52840>git clone --recursive https://github.com/adafruit/Adafruit_nRF52_Bootloader.git
+Cloning into 'Adafruit_nRF52_Bootloader'...
+remote: Enumerating objects: 6420, done.
+remote: Counting objects: 100% (1355/1355), done.
+remote: Compressing objects: 100% (257/257), done.
+remote: Total 6420 (delta 1208), reused 1104 (delta 1096), pack-reused 5065 (from 2)
+Receiving objects: 100% (6420/6420), 6.69 MiB | 3.23 MiB/s, done.
+Resolving deltas: 100% (4096/4096), done.
+Submodule 'lib/nrfx' (https://github.com/NordicSemiconductor/nrfx.git) registered for path 'lib/nrfx'
+Submodule 'lib/tinyusb' (https://github.com/hathach/tinyusb.git) registered for path 'lib/tinyusb'
+Submodule 'lib/uf2' (https://github.com/microsoft/uf2.git) registered for path 'lib/uf2'
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/nrfx'...
+remote: Enumerating objects: 8049, done.
+remote: Counting objects: 100% (3634/3634), done.
+remote: Compressing objects: 100% (575/575), done.
+remote: Total 8049 (delta 3252), reused 3060 (delta 3059), pack-reused 4415 (from 2)
+Receiving objects: 100% (8049/8049), 15.51 MiB | 2.01 MiB/s, done.
+Resolving deltas: 100% (6807/6807), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb'...
+remote: Enumerating objects: 101515, done.
+remote: Counting objects: 100% (7384/7384), done.
+remote: Compressing objects: 100% (539/539), done.
+remote: Total 101515 (delta 7043), reused 6882 (delta 6844), pack-reused 94131 (from 2)
+Receiving objects: 100% (101515/101515), 45.41 MiB | 3.46 MiB/s, done.
+Resolving deltas: 100% (67504/67504), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/uf2'...
+remote: Enumerating objects: 751, done.
+remote: Counting objects: 100% (110/110), done.
+remote: Compressing objects: 100% (67/67), done.
+remote: Total 751 (delta 60), reused 53 (delta 43), pack-reused 641 (from 3)
+Receiving objects: 100% (751/751), 213.33 KiB | 880.00 KiB/s, done.
+Resolving deltas: 100% (399/399), done.
+Submodule path 'lib/nrfx': checked out '7a4c9d946cf1801771fc180acdbf7b878f270093'
+Submodule path 'lib/tinyusb': checked out '9775e76910d569ec73b8dd946f3fa5fe5414acdb'
+Submodule 'hw/mcu/broadcom' (https://github.com/adafruit/broadcom-peripherals.git) registered for path 'lib/tinyusb/hw/mcu/broadcom'
+Submodule 'hw/mcu/gd/nuclei-sdk' (https://github.com/Nuclei-Software/nuclei-sdk.git) registered for path 'lib/tinyusb/hw/mcu/gd/nuclei-sdk'
+Submodule 'hw/mcu/infineon/mtb-xmclib-cat3' (https://github.com/Infineon/mtb-xmclib-cat3.git) registered for path 'lib/tinyusb/hw/mcu/infineon/mtb-xmclib-cat3'
+Submodule 'hw/mcu/microchip' (https://github.com/hathach/microchip_driver.git) registered for path 'lib/tinyusb/hw/mcu/microchip'
+Submodule 'hw/mcu/mindmotion/mm32sdk' (https://github.com/hathach/mm32sdk.git) registered for path 'lib/tinyusb/hw/mcu/mindmotion/mm32sdk'
+Submodule 'hw/mcu/nordic/nrfx' (https://github.com/NordicSemiconductor/nrfx.git) registered for path 'lib/tinyusb/hw/mcu/nordic/nrfx'
+Submodule 'hw/mcu/nuvoton' (https://github.com/majbthrd/nuc_driver.git) registered for path 'lib/tinyusb/hw/mcu/nuvoton'
+Submodule 'hw/mcu/nxp/lpcopen' (https://github.com/hathach/nxp_lpcopen.git) registered for path 'lib/tinyusb/hw/mcu/nxp/lpcopen'
+Submodule 'hw/mcu/nxp/mcux-sdk' (https://github.com/NXPmicro/mcux-sdk.git) registered for path 'lib/tinyusb/hw/mcu/nxp/mcux-sdk'
+Submodule 'hw/mcu/nxp/nxp_sdk' (https://github.com/hathach/nxp_sdk.git) registered for path 'lib/tinyusb/hw/mcu/nxp/nxp_sdk'
+Submodule 'hw/mcu/renesas/rx' (https://github.com/kkitayam/rx_device.git) registered for path 'lib/tinyusb/hw/mcu/renesas/rx'
+Submodule 'hw/mcu/silabs/cmsis-dfp-efm32gg12b' (https://github.com/cmsis-packs/cmsis-dfp-efm32gg12b) registered for path 'lib/tinyusb/hw/mcu/silabs/cmsis-dfp-efm32gg12b'
+Submodule 'hw/mcu/sony/cxd56/spresense-exported-sdk' (https://github.com/sonydevworld/spresense-exported-sdk.git) registered for path 'lib/tinyusb/hw/mcu/sony/cxd56/spresense-exported-sdk'
+Submodule 'hw/mcu/st/cmsis_device_f0' (https://github.com/STMicroelectronics/cmsis_device_f0.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_f0'
+Submodule 'hw/mcu/st/cmsis_device_f1' (https://github.com/STMicroelectronics/cmsis_device_f1.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_f1'
+Submodule 'hw/mcu/st/cmsis_device_f2' (https://github.com/STMicroelectronics/cmsis_device_f2.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_f2'
+Submodule 'hw/mcu/st/cmsis_device_f3' (https://github.com/STMicroelectronics/cmsis_device_f3.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_f3'
+Submodule 'hw/mcu/st/cmsis_device_f4' (https://github.com/STMicroelectronics/cmsis_device_f4.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_f4'
+Submodule 'hw/mcu/st/cmsis_device_f7' (https://github.com/STMicroelectronics/cmsis_device_f7.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_f7'
+Submodule 'hw/mcu/st/cmsis_device_g0' (https://github.com/STMicroelectronics/cmsis_device_g0.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_g0'
+Submodule 'hw/mcu/st/cmsis_device_g4' (https://github.com/STMicroelectronics/cmsis_device_g4.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_g4'
+Submodule 'hw/mcu/st/cmsis_device_h7' (https://github.com/STMicroelectronics/cmsis_device_h7.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_h7'
+Submodule 'hw/mcu/st/cmsis_device_l0' (https://github.com/STMicroelectronics/cmsis_device_l0.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_l0'
+Submodule 'hw/mcu/st/cmsis_device_l1' (https://github.com/STMicroelectronics/cmsis_device_l1.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_l1'
+Submodule 'hw/mcu/st/cmsis_device_l4' (https://github.com/STMicroelectronics/cmsis_device_l4.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_l4'
+Submodule 'hw/mcu/st/cmsis_device_l5' (https://github.com/STMicroelectronics/cmsis_device_l5.git) registered for path 'lib/tinyusb/hw/mcu/st/cmsis_device_l5'
+Submodule 'hw/mcu/st/stm32f0xx_hal_driver' (https://github.com/STMicroelectronics/stm32f0xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32f0xx_hal_driver'
+Submodule 'hw/mcu/st/stm32f1xx_hal_driver' (https://github.com/STMicroelectronics/stm32f1xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32f1xx_hal_driver'
+Submodule 'hw/mcu/st/stm32f2xx_hal_driver' (https://github.com/STMicroelectronics/stm32f2xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32f2xx_hal_driver'
+Submodule 'hw/mcu/st/stm32f3xx_hal_driver' (https://github.com/STMicroelectronics/stm32f3xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32f3xx_hal_driver'
+Submodule 'hw/mcu/st/stm32f4xx_hal_driver' (https://github.com/STMicroelectronics/stm32f4xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32f4xx_hal_driver'
+Submodule 'hw/mcu/st/stm32f7xx_hal_driver' (https://github.com/STMicroelectronics/stm32f7xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32f7xx_hal_driver'
+Submodule 'hw/mcu/st/stm32g0xx_hal_driver' (https://github.com/STMicroelectronics/stm32g0xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32g0xx_hal_driver'
+Submodule 'hw/mcu/st/stm32g4xx_hal_driver' (https://github.com/STMicroelectronics/stm32g4xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32g4xx_hal_driver'
+Submodule 'hw/mcu/st/stm32h7xx_hal_driver' (https://github.com/STMicroelectronics/stm32h7xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32h7xx_hal_driver'
+Submodule 'hw/mcu/st/stm32l0xx_hal_driver' (https://github.com/STMicroelectronics/stm32l0xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32l0xx_hal_driver'
+Submodule 'hw/mcu/st/stm32l1xx_hal_driver' (https://github.com/STMicroelectronics/stm32l1xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32l1xx_hal_driver'
+Submodule 'hw/mcu/st/stm32l4xx_hal_driver' (https://github.com/STMicroelectronics/stm32l4xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32l4xx_hal_driver'
+Submodule 'hw/mcu/st/stm32l5xx_hal_driver' (https://github.com/STMicroelectronics/stm32l5xx_hal_driver.git) registered for path 'lib/tinyusb/hw/mcu/st/stm32l5xx_hal_driver'
+Submodule 'hw/mcu/ti' (https://github.com/hathach/ti_driver.git) registered for path 'lib/tinyusb/hw/mcu/ti'
+Submodule 'lib/CMSIS_5' (https://github.com/ARM-software/CMSIS_5.git) registered for path 'lib/tinyusb/lib/CMSIS_5'
+Submodule 'lib/FreeRTOS-Kernel' (https://github.com/FreeRTOS/FreeRTOS-Kernel.git) registered for path 'lib/tinyusb/lib/FreeRTOS-Kernel'
+Submodule 'lib/lwip' (https://github.com/lwip-tcpip/lwip.git) registered for path 'lib/tinyusb/lib/lwip'
+Submodule 'lib/sct_neopixel' (https://github.com/gsteiert/sct_neopixel) registered for path 'lib/tinyusb/lib/sct_neopixel'
+Submodule 'tools/uf2' (https://github.com/microsoft/uf2.git) registered for path 'lib/tinyusb/tools/uf2'
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/broadcom'...
+remote: Enumerating objects: 933, done.
+remote: Counting objects: 100% (136/136), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 933 (delta 121), reused 117 (delta 112), pack-reused 797 (from 1)
+Receiving objects: 100% (933/933), 2.20 MiB | 3.32 MiB/s, done.
+Resolving deltas: 100% (611/611), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/gd/nuclei-sdk'...
+remote: Enumerating objects: 23516, done.
+remote: Counting objects: 100% (1319/1319), done.
+remote: Compressing objects: 100% (83/83), done.
+error: RPC failed; curl 56 Recv failure: Connection was resetB/s
+error: 8024 bytes of body are still expected
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+fatal: clone of 'https://github.com/Nuclei-Software/nuclei-sdk.git' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/gd/nuclei-sdk' failed
+Failed to clone 'hw/mcu/gd/nuclei-sdk'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/infineon/mtb-xmclib-cat3'...
+fatal: unable to access 'https://github.com/Infineon/mtb-xmclib-cat3.git/': Could not resolve host: github.com
+fatal: clone of 'https://github.com/Infineon/mtb-xmclib-cat3.git' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/infineon/mtb-xmclib-cat3' failed
+Failed to clone 'hw/mcu/infineon/mtb-xmclib-cat3'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/microchip'...
+fatal: unable to access 'https://github.com/hathach/microchip_driver.git/': Could not resolve host: github.com
+fatal: clone of 'https://github.com/hathach/microchip_driver.git' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/microchip' failed
+Failed to clone 'hw/mcu/microchip'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/mindmotion/mm32sdk'...
+fatal: unable to access 'https://github.com/hathach/mm32sdk.git/': Could not resolve host: github.com
+fatal: clone of 'https://github.com/hathach/mm32sdk.git' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/mindmotion/mm32sdk' failed
+Failed to clone 'hw/mcu/mindmotion/mm32sdk'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nordic/nrfx'...
+fatal: unable to access 'https://github.com/NordicSemiconductor/nrfx.git/': Could not resolve host: github.com
+fatal: clone of 'https://github.com/NordicSemiconductor/nrfx.git' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nordic/nrfx' failed
+Failed to clone 'hw/mcu/nordic/nrfx'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nuvoton'...
+fatal: unable to access 'https://github.com/majbthrd/nuc_driver.git/': Could not resolve host: github.com
+fatal: clone of 'https://github.com/majbthrd/nuc_driver.git' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nuvoton' failed
+Failed to clone 'hw/mcu/nuvoton'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nxp/lpcopen'...
+fatal: unable to access 'https://github.com/hathach/nxp_lpcopen.git/': Could not resolve host: github.com
+fatal: clone of 'https://github.com/hathach/nxp_lpcopen.git' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nxp/lpcopen' failed
+Failed to clone 'hw/mcu/nxp/lpcopen'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nxp/mcux-sdk'...
+fatal: unable to access 'https://github.com/NXPmicro/mcux-sdk.git/': Could not resolve host: github.com
+fatal: clone of 'https://github.com/NXPmicro/mcux-sdk.git' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nxp/mcux-sdk' failed
+Failed to clone 'hw/mcu/nxp/mcux-sdk'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nxp/nxp_sdk'...
+fatal: unable to access 'https://github.com/hathach/nxp_sdk.git/': Could not resolve host: github.com
+fatal: clone of 'https://github.com/hathach/nxp_sdk.git' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nxp/nxp_sdk' failed
+Failed to clone 'hw/mcu/nxp/nxp_sdk'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/renesas/rx'...
+fatal: unable to access 'https://github.com/kkitayam/rx_device.git/': Could not resolve host: github.com
+fatal: clone of 'https://github.com/kkitayam/rx_device.git' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/renesas/rx' failed
+Failed to clone 'hw/mcu/renesas/rx'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/silabs/cmsis-dfp-efm32gg12b'...
+fatal: unable to access 'https://github.com/cmsis-packs/cmsis-dfp-efm32gg12b/': Could not resolve host: github.com
+fatal: clone of 'https://github.com/cmsis-packs/cmsis-dfp-efm32gg12b' into submodule path 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/silabs/cmsis-dfp-efm32gg12b' failed
+Failed to clone 'hw/mcu/silabs/cmsis-dfp-efm32gg12b'. Retry scheduled
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/sony/cxd56/spresense-exported-sdk'...
+remote: Enumerating objects: 5050, done.
+remote: Counting objects: 100% (1408/1408), done.
+remote: Compressing objects: 100% (980/980), done.
+remote: Total 5050 (delta 701), reused 657 (delta 384), pack-reused 3642 (from 1)
+Receiving objects: 100% (5050/5050), 30.39 MiB | 3.91 MiB/s, done.
+Resolving deltas: 100% (3140/3140), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_f0'...
+remote: Enumerating objects: 314, done.
+remote: Counting objects: 100% (314/314), done.
+remote: Compressing objects: 100% (89/89), done.
+remote: Total 314 (delta 244), reused 287 (delta 218), pack-reused 0 (from 0)
+Receiving objects: 100% (314/314), 555.45 KiB | 215.00 KiB/s, done.
+Resolving deltas: 100% (244/244), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_f1'...
+remote: Enumerating objects: 301, done.
+remote: Counting objects: 100% (301/301), done.
+remote: Compressing objects: 100% (90/90), done.
+remote: Total 301 (delta 225), reused 279 (delta 203), pack-reused 0 (from 0)
+Receiving objects: 100% (301/301), 337.24 KiB | 1.05 MiB/s, done.
+Resolving deltas: 100% (225/225), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_f2'...
+remote: Enumerating objects: 136, done.
+remote: Counting objects: 100% (136/136), done.
+remote: Compressing objects: 100% (64/64), done.
+remote: Total 136 (delta 73), reused 129 (delta 66), pack-reused 0 (from 0)
+Receiving objects: 100% (136/136), 244.94 KiB | 950.00 KiB/s, done.
+Resolving deltas: 100% (73/73), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_f3'...
+remote: Enumerating objects: 327, done.
+remote: Counting objects: 100% (327/327), done.
+remote: Compressing objects: 100% (86/86), done.
+remote: Total 327 (delta 253), reused 308 (delta 234), pack-reused 0 (from 0)
+Receiving objects: 100% (327/327), 654.66 KiB | 1.17 MiB/s, done.
+Resolving deltas: 100% (253/253), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_f4'...
+remote: Enumerating objects: 614, done.
+remote: Counting objects: 100% (248/248), done.
+remote: Compressing objects: 100% (50/50), done.
+remote: Total 614 (delta 232), reused 205 (delta 197), pack-reused 366 (from 1)
+Receiving objects: 100% (614/614), 2.14 MiB | 2.95 MiB/s, done.
+Resolving deltas: 100% (505/505), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_f7'...
+remote: Enumerating objects: 417, done.
+remote: Counting objects: 100% (417/417), done.
+remote: Compressing objects: 100% (126/126), done.
+remote: Total 417 (delta 331), reused 366 (delta 282), pack-reused 0 (from 0)
+Receiving objects: 100% (417/417), 674.37 KiB | 1.47 MiB/s, done.
+Resolving deltas: 100% (331/331), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_g0'...
+remote: Enumerating objects: 372, done.
+remote: Counting objects: 100% (372/372), done.
+remote: Compressing objects: 100% (120/120), done.
+remote: Total 372 (delta 289), reused 327 (delta 245), pack-reused 0 (from 0)
+Receiving objects: 100% (372/372), 385.03 KiB | 1.20 MiB/s, done.
+Resolving deltas: 100% (289/289), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_g4'...
+remote: Enumerating objects: 371, done.
+remote: Counting objects: 100% (371/371), done.
+remote: Compressing objects: 100% (120/120), done.
+remote: Total 371 (delta 278), reused 332 (delta 239), pack-reused 0 (from 0)
+Receiving objects: 100% (371/371), 316.25 KiB | 944.00 KiB/s, done.
+Resolving deltas: 100% (278/278), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_h7'...
+remote: Enumerating objects: 942, done.
+remote: Counting objects: 100% (115/115), done.
+remote: Compressing objects: 100% (43/43), done.
+remote: Total 942 (delta 98), reused 74 (delta 71), pack-reused 827 (from 1)
+Receiving objects: 100% (942/942), 7.47 MiB | 2.76 MiB/s, done.
+Resolving deltas: 100% (791/791), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_l0'...
+remote: Enumerating objects: 372, done.
+remote: Counting objects: 100% (372/372), done.
+remote: Compressing objects: 100% (88/88), done.
+remote: Total 372 (delta 303), reused 347 (delta 278), pack-reused 0 (from 0)
+Receiving objects: 100% (372/372), 319.95 KiB | 848.00 KiB/s, done.
+Resolving deltas: 100% (303/303), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_l1'...
+remote: Enumerating objects: 421, done.
+remote: Counting objects: 100% (421/421), done.
+remote: Compressing objects: 100% (87/87), done.
+remote: Total 421 (delta 349), reused 399 (delta 327), pack-reused 0 (from 0)
+Receiving objects: 100% (421/421), 337.33 KiB | 742.00 KiB/s, done.
+Resolving deltas: 100% (349/349), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_l4'...
+remote: Enumerating objects: 587, done.
+remote: Counting objects: 100% (36/36), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 587 (delta 32), reused 28 (delta 28), pack-reused 551 (from 1)
+Receiving objects: 100% (587/587), 1.04 MiB | 2.35 MiB/s, done.
+Resolving deltas: 100% (504/504), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/cmsis_device_l5'...
+remote: Enumerating objects: 227, done.
+remote: Counting objects: 100% (227/227), done.
+remote: Compressing objects: 100% (104/104), done.
+remote: Total 227 (delta 138), reused 203 (delta 117), pack-reused 0 (from 0)
+Receiving objects: 100% (227/227), 290.87 KiB | 960.00 KiB/s, done.
+Resolving deltas: 100% (138/138), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32f0xx_hal_driver'...
+remote: Enumerating objects: 1074, done.
+remote: Counting objects: 100% (76/76), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 1074 (delta 67), reused 63 (delta 61), pack-reused 998 (from 1)
+Receiving objects: 100% (1074/1074), 1.51 MiB | 1.86 MiB/s, done.
+Resolving deltas: 100% (831/831), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32f1xx_hal_driver'...
+remote: Enumerating objects: 1001, done.
+remote: Counting objects: 100% (197/197), done.
+remote: Compressing objects: 100% (123/123), done.
+remote: Total 1001 (delta 114), reused 112 (delta 74), pack-reused 804 (from 1)
+Receiving objects: 100% (1001/1001), 1.71 MiB | 490.00 KiB/s, done.
+Resolving deltas: 100% (704/704), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32f2xx_hal_driver'...
+remote: Enumerating objects: 1056, done.
+remote: Counting objects: 100% (267/267), done.
+remote: Compressing objects: 100% (157/157), done.
+remote: Total 1056 (delta 159), reused 167 (delta 110), pack-reused 789 (from 1)
+Receiving objects: 100% (1056/1056), 1.99 MiB | 2.37 MiB/s, done.
+Resolving deltas: 100% (748/748), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32f3xx_hal_driver'...
+remote: Enumerating objects: 1273, done.
+remote: Counting objects: 100% (39/39), done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 1273 (delta 18), reused 23 (delta 11), pack-reused 1234 (from 1)
+Receiving objects: 100% (1273/1273), 2.16 MiB | 2.34 MiB/s, done.
+Resolving deltas: 100% (983/983), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32f4xx_hal_driver'...
+remote: Enumerating objects: 1491, done.
+remote: Counting objects: 100% (616/616), done.
+remote: Compressing objects: 100% (220/220), done.
+remote: Total 1491 (delta 482), reused 416 (delta 396), pack-reused 875 (from 1)
+Receiving objects: 100% (1491/1491), 3.19 MiB | 720.00 KiB/s, done.
+Resolving deltas: 100% (1109/1109), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32f7xx_hal_driver'...
+remote: Enumerating objects: 1331, done.
+remote: Counting objects: 100% (322/322), done.
+remote: Compressing objects: 100% (227/227), done.
+remote: Total 1331 (delta 161), reused 176 (delta 95), pack-reused 1009 (from 1)
+Receiving objects: 100% (1331/1331), 3.17 MiB | 2.14 MiB/s, done.
+Resolving deltas: 100% (904/904), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32g0xx_hal_driver'...
+remote: Enumerating objects: 1274, done.
+remote: Counting objects: 100% (321/321), done.
+remote: Compressing objects: 100% (196/196), done.
+remote: Total 1274 (delta 190), reused 186 (delta 124), pack-reused 953 (from 1)
+Receiving objects: 100% (1274/1274), 2.41 MiB | 1.26 MiB/s, done.
+Resolving deltas: 100% (932/932), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32g4xx_hal_driver'...
+remote: Enumerating objects: 1574, done.
+remote: Counting objects: 100% (170/170), done.
+remote: Compressing objects: 100% (82/82), done.
+remote: Total 1574 (delta 113), reused 114 (delta 88), pack-reused 1404 (from 1)
+Receiving objects: 100% (1574/1574), 2.44 MiB | 1.94 MiB/s, done.
+Resolving deltas: 100% (1247/1247), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32h7xx_hal_driver'...
+remote: Enumerating objects: 1926, done.
+remote: Counting objects: 100% (410/410), done.
+remote: Compressing objects: 100% (105/105), done.
+remote: Total 1926 (delta 361), reused 315 (delta 305), pack-reused 1516 (from 1)
+Receiving objects: 100% (1926/1926), 3.45 MiB | 2.80 MiB/s, done.
+Resolving deltas: 100% (1555/1555), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32l0xx_hal_driver'...
+remote: Enumerating objects: 1139, done.
+remote: Counting objects: 100% (123/123), done.
+remote: Compressing objects: 100% (92/92), done.
+remote: Total 1139 (delta 53), reused 60 (delta 30), pack-reused 1016 (from 1)
+Receiving objects: 100% (1139/1139), 1.85 MiB | 1.91 MiB/s, done.
+Resolving deltas: 100% (825/825), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32l1xx_hal_driver'...
+remote: Enumerating objects: 927, done.
+remote: Counting objects: 100% (927/927), done.
+remote: Compressing objects: 100% (608/608), done.
+remote: Total 927 (delta 689), reused 547 (delta 312), pack-reused 0 (from 0)
+Receiving objects: 100% (927/927), 1.22 MiB | 1.75 MiB/s, done.
+Resolving deltas: 100% (689/689), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32l4xx_hal_driver'...
+remote: Enumerating objects: 1532, done.
+remote: Counting objects: 100% (492/492), done.
+remote: Compressing objects: 100% (252/252), done.
+remote: Total 1532 (delta 273), reused 428 (delta 240), pack-reused 1040 (from 1)
+Receiving objects: 100% (1532/1532), 3.71 MiB | 2.27 MiB/s, done.
+Resolving deltas: 100% (1058/1058), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/st/stm32l5xx_hal_driver'...
+remote: Enumerating objects: 1393, done.
+remote: Counting objects: 100% (63/63), done.
+remote: Compressing objects: 100% (29/29), done.
+remote: Total 1393 (delta 41), reused 45 (delta 34), pack-reused 1330 (from 1)
+Receiving objects: 100% (1393/1393), 2.15 MiB | 2.85 MiB/s, done.
+Resolving deltas: 100% (1092/1092), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/ti'...
+remote: Enumerating objects: 333, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 333 (delta 0), reused 0 (delta 0), pack-reused 330 (from 1)
+Receiving objects: 100% (333/333), 634.37 KiB | 791.00 KiB/s, done.
+Resolving deltas: 100% (231/231), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/lib/CMSIS_5'...
+remote: Enumerating objects: 97200, done.
+remote: Counting objects: 100% (736/736), done.
+remote: Compressing objects: 100% (252/252), done.
+remote: Total 97200 (delta 633), reused 489 (delta 475), pack-reused 96464 (from 3)
+Receiving objects: 100% (97200/97200), 256.72 MiB | 3.91 MiB/s, done.
+Resolving deltas: 100% (71867/71867), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/lib/FreeRTOS-Kernel'...
+remote: Enumerating objects: 177202, done.
+remote: Counting objects: 100% (2573/2573), done.
+remote: Compressing objects: 100% (177/177), done.
+remote: Total 177202 (delta 2473), reused 2396 (delta 2396), pack-reused 174629 (from 2)
+Receiving objects: 100% (177202/177202), 122.02 MiB | 4.14 MiB/s, done.
+Resolving deltas: 100% (125703/125703), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/lib/lwip'...
+remote: Enumerating objects: 56338, done.
+remote: Counting objects: 100% (773/773), done.
+remote: Compressing objects: 100% (304/304), done.
+remote: Total 56338 (delta 536), reused 469 (delta 469), pack-reused 55565 (from 2)
+Receiving objects: 100% (56338/56338), 11.66 MiB | 3.39 MiB/s, done.
+Resolving deltas: 100% (42258/42258), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/lib/sct_neopixel'...
+remote: Enumerating objects: 70, done.
+remote: Counting objects: 100% (70/70), done.
+remote: Compressing objects: 100% (44/44), done.
+remote: Total 70 (delta 35), reused 57 (delta 25), pack-reused 0 (from 0)
+Receiving objects: 100% (70/70), 22.02 KiB | 262.00 KiB/s, done.
+Resolving deltas: 100% (35/35), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/tools/uf2'...
+remote: Enumerating objects: 751, done.
+remote: Counting objects: 100% (110/110), done.
+remote: Compressing objects: 100% (67/67), done.
+remote: Total 751 (delta 60), reused 53 (delta 43), pack-reused 641 (from 3)
+Receiving objects: 100% (751/751), 213.33 KiB | 704.00 KiB/s, done.
+Resolving deltas: 100% (399/399), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/gd/nuclei-sdk'...
+remote: Enumerating objects: 23516, done.
+remote: Counting objects: 100% (1319/1319), done.
+remote: Compressing objects: 100% (83/83), done.
+remote: Total 23516 (delta 1274), reused 1240 (delta 1235), pack-reused 22197 (from 4)
+Receiving objects: 100% (23516/23516), 344.87 MiB | 4.17 MiB/s, done.
+Resolving deltas: 100% (14194/14194), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/infineon/mtb-xmclib-cat3'...
+remote: Enumerating objects: 6940, done.
+remote: Counting objects: 100% (6940/6940), done.
+remote: Compressing objects: 100% (2019/2019), done.
+remote: Total 6940 (delta 4893), reused 6602 (delta 4594), pack-reused 0 (from 0)
+Receiving objects: 100% (6940/6940), 17.14 MiB | 285.00 KiB/s, done.
+Resolving deltas: 100% (4893/4893), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/microchip'...
+remote: Enumerating objects: 2685, done.
+remote: Counting objects: 100% (2685/2685), done.
+remote: Compressing objects: 100% (1369/1369), done.
+remote: Total 2685 (delta 1709), reused 2164 (delta 1200), pack-reused 0 (from 0)
+Receiving objects: 100% (2685/2685), 5.07 MiB | 3.30 MiB/s, done.
+Resolving deltas: 100% (1709/1709), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/mindmotion/mm32sdk'...
+remote: Enumerating objects: 289, done.
+remote: Counting objects: 100% (289/289), done.
+remote: Compressing objects: 100% (158/158), done.
+remote: Total 289 (delta 159), reused 247 (delta 129), pack-reused 0 (from 0)
+Receiving objects: 100% (289/289), 456.61 KiB | 1.34 MiB/s, done.
+Resolving deltas: 100% (159/159), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nordic/nrfx'...
+remote: Enumerating objects: 8049, done.
+remote: Counting objects: 100% (3634/3634), done.
+remote: Compressing objects: 100% (575/575), done.
+remote: Total 8049 (delta 3252), reused 3060 (delta 3059), pack-reused 4415 (from 2)
+Receiving objects: 100% (8049/8049), 15.51 MiB | 5.92 MiB/s, done.
+Resolving deltas: 100% (6807/6807), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nuvoton'...
+remote: Enumerating objects: 340, done.
+remote: Counting objects: 100% (340/340), done.
+remote: Compressing objects: 100% (236/236), done.
+remote: Total 340 (delta 161), reused 271 (delta 92), pack-reused 0 (from 0)
+Receiving objects: 100% (340/340), 1.21 MiB | 2.05 MiB/s, done.
+Resolving deltas: 100% (161/161), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nxp/lpcopen'...
+remote: Enumerating objects: 535, done.
+remote: Counting objects: 100% (535/535), done.
+remote: Compressing objects: 100% (329/329), done.
+remote: Total 535 (delta 202), reused 525 (delta 197), pack-reused 0 (from 0)
+Receiving objects: 100% (535/535), 968.87 KiB | 2.07 MiB/s, done.
+Resolving deltas: 100% (202/202), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nxp/mcux-sdk'...
+remote: Enumerating objects: 81420, done.
+remote: Counting objects: 100% (7276/7276), done.
+remote: Compressing objects: 100% (854/854), done.
+remote: Total 81420 (delta 6542), reused 6494 (delta 6409), pack-reused 74144 (from 3)
+Receiving objects: 100% (81420/81420), 238.17 MiB | 4.77 MiB/s, done.
+Resolving deltas: 100% (55249/55249), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/nxp/nxp_sdk'...
+remote: Enumerating objects: 142, done.
+remote: Counting objects: 100% (142/142), done.
+remote: Compressing objects: 100% (98/98), done.
+remote: Total 142 (delta 42), reused 135 (delta 40), pack-reused 0 (from 0)
+Receiving objects: 100% (142/142), 560.02 KiB | 1.50 MiB/s, done.
+Resolving deltas: 100% (42/42), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/renesas/rx'...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 17 (delta 4), reused 12 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (17/17), 75.49 KiB | 522.00 KiB/s, done.
+Resolving deltas: 100% (4/4), done.
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/silabs/cmsis-dfp-efm32gg12b'...
+remote: Enumerating objects: 725, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Total 725 (delta 19), reused 19 (delta 19), pack-reused 705 (from 1)
+Receiving objects: 100% (725/725), 30.60 MiB | 4.38 MiB/s, done.
+Resolving deltas: 100% (621/621), done.
+Submodule path 'lib/tinyusb/hw/mcu/broadcom': checked out '5bff1d5e02c37c38ee1e5cf3f7fe82fdc7e1517e'
+Submodule 'firmware.wiki' (https://github.com/raspberrypi/firmware.wiki.git) registered for path 'lib/tinyusb/hw/mcu/broadcom/firmware.wiki'
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/hw/mcu/broadcom/firmware.wiki'...
+remote: Enumerating objects: 422, done.
+remote: Total 422 (delta 0), reused 0 (delta 0), pack-reused 422 (from 1)
+Receiving objects: 100% (422/422), 54.56 KiB | 620.00 KiB/s, done.
+Resolving deltas: 100% (262/262), done.
+Submodule path 'lib/tinyusb/hw/mcu/broadcom/firmware.wiki': checked out 'fc62b78f1c1c50374c677b93bd80274b714e359d'
+Submodule path 'lib/tinyusb/hw/mcu/gd/nuclei-sdk': checked out '7eb7bfa9ea4fbeacfafe1d5f77d5a0e6ed3922e7'
+Submodule path 'lib/tinyusb/hw/mcu/infineon/mtb-xmclib-cat3': checked out 'daf5500d03cba23e68c2f241c30af79cd9d63880'
+Submodule path 'lib/tinyusb/hw/mcu/microchip': checked out '58eb3763200ff51a998be5f537acf67299add227'
+Submodule path 'lib/tinyusb/hw/mcu/mindmotion/mm32sdk': checked out '708a7152952ac595d24837069dcc0f7f59a4c30b'
+Submodule path 'lib/tinyusb/hw/mcu/nordic/nrfx': checked out '281cc2e178fd9a470d844b3afdea9eb322a0b0e8'
+Submodule path 'lib/tinyusb/hw/mcu/nuvoton': checked out '2204191ec76283371419fbcec207da02e1bc22fa'
+Submodule path 'lib/tinyusb/hw/mcu/nxp/lpcopen': checked out '43c45c85405a5dd114fff0ea95cca62837740c13'
+Submodule path 'lib/tinyusb/hw/mcu/nxp/mcux-sdk': checked out 'cb21c660991c92e90ece99ccb63a4bc611899c3a'
+Submodule path 'lib/tinyusb/hw/mcu/nxp/nxp_sdk': checked out '845c8fc49b6fb660f06a5c45225494eacb06f00c'
+Submodule path 'lib/tinyusb/hw/mcu/renesas/rx': checked out '706b4e0cf485605c32351e2f90f5698267996023'
+Submodule path 'lib/tinyusb/hw/mcu/silabs/cmsis-dfp-efm32gg12b': checked out 'f1c31b7887669cb230b3ea63f9b56769078960bc'
+Submodule path 'lib/tinyusb/hw/mcu/sony/cxd56/spresense-exported-sdk': checked out '2ec2a1538362696118dc3fdf56f33dacaf8f4067'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_f0': checked out '2fc25ee22264bc27034358be0bd400b893ef837e'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_f1': checked out '6601104a6397299b7304fd5bcd9a491f56cb23a6'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_f2': checked out '182fcb3681ce116816feb41b7764f1b019ce796f'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_f3': checked out '5e4ee5ed7a7b6c85176bb70a9fd3c72d6eb99f1b'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_f4': checked out '2615e866fa48fe1ff1af9e31c348813f2b19e7ec'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_f7': checked out 'fc676ef1ad177eb874eaa06444d3d75395fc51f4'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_g0': checked out '08258b28ee95f50cb9624d152a1cbf084be1f9a5'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_g4': checked out 'ce822adb1dc552b3aedd13621edbc7fdae124878'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_h7': checked out '60dc2c913203dc8629dc233d4384dcc41c91e77f'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_l0': checked out '06748ca1f93827befdb8b794402320d94d02004f'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_l1': checked out '7f16ec0a1c4c063f84160b4cc6bf88ad554a823e'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_l4': checked out '6ca7312fa6a5a460b5a5a63d66da527fdd8359a6'
+Submodule path 'lib/tinyusb/hw/mcu/st/cmsis_device_l5': checked out 'd922865fc0326a102c26211c44b8e42f52c1e53d'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32f0xx_hal_driver': checked out '0e95cd88657030f640a11e690a8a5186c7712ea5'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32f1xx_hal_driver': checked out '1dd9d3662fb7eb2a7f7d3bc0a4c1dc7537915a29'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32f2xx_hal_driver': checked out 'c75ace9b908a9aca631193ebf2466963b8ea33d0'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32f3xx_hal_driver': checked out '1761b6207318ede021706e75aae78f452d72b6fa'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32f4xx_hal_driver': checked out '04e99fbdabd00ab8f370f377c66b0a4570365b58'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32f7xx_hal_driver': checked out 'f7ffdf6bf72110e58b42c632b0a051df5997e4ee'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32g0xx_hal_driver': checked out '5b53e6cee664a82b16c86491aa0060e2110c00cb'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32g4xx_hal_driver': checked out '8b4518417706d42eef5c14e56a650005abf478a8'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32h7xx_hal_driver': checked out 'd8461b980b59b1625207d8c4f2ce0a9c2a7a3b04'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32l0xx_hal_driver': checked out 'fbdacaf6f8c82a4e1eb9bd74ba650b491e97e17b'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32l1xx_hal_driver': checked out '44efc446fa69ed8344e7fd966e68ed11043b35d9'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32l4xx_hal_driver': checked out 'aee3d5bf283ae5df87532b781bdd01b7caf256fc'
+Submodule path 'lib/tinyusb/hw/mcu/st/stm32l5xx_hal_driver': checked out '675c32a75df37f39d50d61f51cb0dcf53f07e1cb'
+Submodule path 'lib/tinyusb/hw/mcu/ti': checked out '143ed6cc20a7615d042b03b21e070197d473e6e5'
+Submodule path 'lib/tinyusb/lib/CMSIS_5': checked out '20285262657d1b482d132d20d755c8c330d55c1f'
+Submodule path 'lib/tinyusb/lib/FreeRTOS-Kernel': checked out '2a604f4a2818b8354b5e1a39e388eb5e16cfbc1f'
+Submodule path 'lib/tinyusb/lib/lwip': checked out '159e31b689577dbf69cf0683bbaffbd71fa5ee10'
+Submodule path 'lib/tinyusb/lib/sct_neopixel': checked out 'e73e04ca63495672d955f9268e003cffe168fcd8'
+Submodule path 'lib/tinyusb/tools/uf2': checked out '19615407727073e36d81bf239c52108ba92e7660'
+Submodule 'hidapi' (https://github.com/signal11/hidapi) registered for path 'lib/tinyusb/tools/uf2/hidapi'
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/tinyusb/tools/uf2/hidapi'...
+remote: Enumerating objects: 2006, done.
+remote: Counting objects: 100% (508/508), done.
+remote: Compressing objects: 100% (40/40), done.
+remote: Total 2006 (delta 485), reused 468 (delta 468), pack-reused 1498 (from 1)
+Receiving objects: 100% (2006/2006), 2.66 MiB | 4.39 MiB/s, done.
+Resolving deltas: 100% (1217/1217), done.
+Submodule path 'lib/tinyusb/tools/uf2/hidapi': checked out 'a6a622ffb680c55da0de787ff93b80280498330f'
+Submodule path 'lib/tinyusb/hw/mcu/gd/nuclei-sdk': checked out '7eb7bfa9ea4fbeacfafe1d5f77d5a0e6ed3922e7'
+Submodule path 'lib/tinyusb/hw/mcu/infineon/mtb-xmclib-cat3': checked out 'daf5500d03cba23e68c2f241c30af79cd9d63880'
+Submodule path 'lib/tinyusb/hw/mcu/microchip': checked out '58eb3763200ff51a998be5f537acf67299add227'
+Submodule path 'lib/tinyusb/hw/mcu/mindmotion/mm32sdk': checked out '708a7152952ac595d24837069dcc0f7f59a4c30b'
+Submodule path 'lib/tinyusb/hw/mcu/nordic/nrfx': checked out '281cc2e178fd9a470d844b3afdea9eb322a0b0e8'
+Submodule path 'lib/tinyusb/hw/mcu/nuvoton': checked out '2204191ec76283371419fbcec207da02e1bc22fa'
+Submodule path 'lib/tinyusb/hw/mcu/nxp/lpcopen': checked out '43c45c85405a5dd114fff0ea95cca62837740c13'
+Submodule path 'lib/tinyusb/hw/mcu/nxp/mcux-sdk': checked out 'cb21c660991c92e90ece99ccb63a4bc611899c3a'
+Submodule path 'lib/tinyusb/hw/mcu/nxp/nxp_sdk': checked out '845c8fc49b6fb660f06a5c45225494eacb06f00c'
+Submodule path 'lib/tinyusb/hw/mcu/renesas/rx': checked out '706b4e0cf485605c32351e2f90f5698267996023'
+Submodule path 'lib/tinyusb/hw/mcu/silabs/cmsis-dfp-efm32gg12b': checked out 'f1c31b7887669cb230b3ea63f9b56769078960bc'
+Submodule path 'lib/uf2': checked out 'b19ac9ad613e11a062e4d00845e2b80e6b0ad29f'
+Submodule 'hidapi' (https://github.com/signal11/hidapi) registered for path 'lib/uf2/hidapi'
+Cloning into 'D:/dfu nrf52840/Adafruit_nRF52_Bootloader/lib/uf2/hidapi'...
+remote: Enumerating objects: 2006, done.
+remote: Counting objects: 100% (508/508), done.
+remote: Compressing objects: 100% (40/40), done.
+remote: Total 2006 (delta 485), reused 468 (delta 468), pack-reused 1498 (from 1)
+Receiving objects: 100% (2006/2006), 2.66 MiB | 3.19 MiB/s, done.
+Resolving deltas: 100% (1217/1217), done.
+Submodule path 'lib/uf2/hidapi': checked out 'a6a622ffb680c55da0de787ff93b80280498330f'
+
+D:\dfu nrf52840>cd Adafruit_nRF52_Bootloader
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>git submodule update --init --recursive
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>cd Adafruit_nRF52_Bootloader
+The system cannot find the path specified.
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>dir Makefile
+ Volume in drive D has no label.
+ Volume Serial Number is 3482-82DB
+
+ Directory of D:\dfu nrf52840\Adafruit_nRF52_Bootloader
+
+07/10/2025  04:29 PM            16,188 Makefile
+               1 File(s)         16,188 bytes
+               0 Dir(s)  192,889,171,968 bytes free
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>Makefile
+'Makefile' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>make BOARD=feather_nrf52840_sense
+'cut' is not recognized as an internal or external command,
+operable program or batch file.
+The system cannot find the path specified.
+CC dfu_ble_svc.c
+CC dfu_init.c
+CC flash_nrf5x.c
+CC main.c
+CC screen.c
+CC images.c
+CC boards.c
+CC nrfx_power.c
+CC nrfx_nvmc.c
+CC system_nrf52840.c
+CC bootloader.c
+CC bootloader_settings.c
+CC bootloader_util.c
+CC dfu_transport_serial.c
+CC dfu_transport_ble.c
+CC dfu_single_bank.c
+CC ble_dfu.c
+CC ble_dis.c
+CC pstorage_raw.c
+CC app_timer.c
+CC app_scheduler.c
+CC app_error.c
+CC app_util_platform.c
+CC crc16.c
+CC hci_mem_pool.c
+CC hci_slip.c
+CC hci_transport.c
+CC nrf_assert.c
+CC pinconfig.c
+CC msc_uf2.c
+CC usb_desc.c
+CC usb.c
+CC ghostfat.c
+CC dcd_nrf5x.c
+CC tusb_fifo.c
+CC usbd.c
+CC usbd_control.c
+CC cdc_device.c
+CC msc_device.c
+CC tusb.c
+AS gcc_startup_nrf52840.S
+LD feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.out
+Memory region         Used Size  Region Size  %age Used
+           FLASH:       31800 B        38 KB     81.72%
+BOOTLOADER_CONFIG:          88 B         2 KB      4.30%
+ MBR_PARAMS_PAGE:          0 GB         4 KB      0.00%
+BOOTLOADER_SETTINGS:          4 KB         4 KB    100.00%
+             RAM:       25020 B       224 KB     10.91%
+       DBL_RESET:          0 GB          4 B      0.00%
+          NOINIT:          62 B        128 B     48.44%
+ UICR_BOOTLOADER:           4 B          4 B    100.00%
+UICR_MBR_PARAM_PAGE:           4 B          4 B    100.00%
+   text    data     bss     dec     hex filename
+  31888    1740   27446   61074    ee92 _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.out
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.hex
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.hex
+process_begin: CreateProcess(NULL, python3 tools/hexmerge.py --overlap=replace -o _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.hex _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.hex lib/softdevice/mbr/hex/mbr_nrf52_2.4.1_mbr.hex, ...) failed.
+make (e=2): The system cannot find the file specified.
+make: *** [_build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.hex] Error 2
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>make BOARD=feather_nrf52840_sense
+'cut' is not recognized as an internal or external command,
+operable program or batch file.
+The system cannot find the path specified.
+LD feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3.out
+Memory region         Used Size  Region Size  %age Used
+           FLASH:       31800 B        38 KB     81.72%
+BOOTLOADER_CONFIG:          88 B         2 KB      4.30%
+ MBR_PARAMS_PAGE:          0 GB         4 KB      0.00%
+BOOTLOADER_SETTINGS:          4 KB         4 KB    100.00%
+             RAM:       25020 B       224 KB     10.91%
+       DBL_RESET:          0 GB          4 B      0.00%
+          NOINIT:          62 B        128 B     48.44%
+ UICR_BOOTLOADER:           4 B          4 B    100.00%
+UICR_MBR_PARAM_PAGE:           4 B          4 B    100.00%
+   text    data     bss     dec     hex filename
+  31888    1740   27446   61074    ee92 _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3.out
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3.hex
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3_nosd.hex
+process_begin: CreateProcess(NULL, python3 tools/hexmerge.py --overlap=replace -o _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3_nosd.hex _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3.hex lib/softdevice/mbr/hex/mbr_nrf52_2.4.1_mbr.hex, ...) failed.
+make (e=2): The system cannot find the file specified.
+make: *** [_build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3_nosd.hex] Error 2
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>python --version
+Python 3.13.3
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>python --version
+Python 3.13.3
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>python tools/hexmerge.py --help
+hexmerge: merge content of hex files.
+Usage:
+    python hexmerge.py [options] FILES...
+
+Options:
+    -h, --help              this help message.
+    -v, --version           version info.
+    -o, --output=FILENAME   output file name (emit output to stdout
+                            if option is not specified)
+    -r, --range=START:END   specify address range for output
+                            (ascii hex value). Both values are inclusive.
+                            Range can be in form 'START:' or ':END'.
+    --no-start-addr         Don't write start addr to output file.
+    --overlap=METHOD        What to do when data in files overlapped.
+                            Supported variants:
+                            * error -- stop and show error message (default)
+                            * ignore -- keep data from first file that
+                                        contains data at overlapped address
+                            * replace -- use data from last file that
+                                         contains data at overlapped address
+
+Arguments:
+    FILES       list of hex files for merging
+                (use '-' to read content from stdin)
+
+You can specify address range for each file in the form:
+
+    filename:START:END
+
+See description of range option above.
+
+You can omit START or END, so supported variants are:
+
+    filename:START:     read filename and use data starting from START addr
+    filename::END       read filename and use data till END addr
+
+Use entire file content:
+
+    filename
+or
+    filename::
+
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>PYTHON := python
+PYTHON: can't open file 'D:\\dfu nrf52840\\Adafruit_nRF52_Bootloader\\:=': [Errno 22] Invalid argument
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>PYTHON := python3
+PYTHON: can't open file 'D:\\dfu nrf52840\\Adafruit_nRF52_Bootloader\\:=': [Errno 22] Invalid argument
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>make BOARD=feather_nrf52840_sense
+'cut' is not recognized as an internal or external command,
+operable program or batch file.
+The system cannot find the path specified.
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3_nosd.hex
+process_begin: CreateProcess(NULL, python3 tools/hexmerge.py --overlap=replace -o _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3_nosd.hex _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3.hex lib/softdevice/mbr/hex/mbr_nrf52_2.4.1_mbr.hex, ...) failed.
+make (e=2): The system cannot find the file specified.
+make: *** [_build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3_nosd.hex] Error 2
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>make BOARD=feather_nrf52840_sense
+'cut' is not recognized as an internal or external command,
+operable program or batch file.
+The system cannot find the path specified.
+LD feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.out
+Memory region         Used Size  Region Size  %age Used
+           FLASH:       31800 B        38 KB     81.72%
+BOOTLOADER_CONFIG:          88 B         2 KB      4.30%
+ MBR_PARAMS_PAGE:          0 GB         4 KB      0.00%
+BOOTLOADER_SETTINGS:          4 KB         4 KB    100.00%
+             RAM:       25020 B       224 KB     10.91%
+       DBL_RESET:          0 GB          4 B      0.00%
+          NOINIT:          62 B        128 B     48.44%
+ UICR_BOOTLOADER:           4 B          4 B    100.00%
+UICR_MBR_PARAM_PAGE:           4 B          4 B    100.00%
+   text    data     bss     dec     hex filename
+  31888    1740   27446   61074    ee92 _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.out
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.hex
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.hex
+process_begin: CreateProcess(NULL, pythontools/hexmerge.py --overlap=replace -o _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.hex _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.hex lib/softdevice/mbr/hex/mbr_nrf52_2.4.1_mbr.hex, ...) failed.
+make (e=2): The system cannot find the file specified.
+make: *** [_build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.hex] Error 2
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>make BOARD=feather_nrf52840_sense
+'cut' is not recognized as an internal or external command,
+operable program or batch file.
+The system cannot find the path specified.
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.hex
+Create update-feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.uf2
+Converted to uf2, output size: 73728, start address: 0x0
+Wrote 73728 bytes to _build/build-feather_nrf52840_sense/update-feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.uf2
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_s140_6.1.1.hex
+Zip created at _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_s140_6.1.1.zip
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>nrfjprog --eraseall
+[error] [ Client] - Encountered error -90: Command read_device_info executed for 14 milliseconds with result -90
+[error] [ Client] - Encountered error -90: Command read_memory_descriptors executed for 13 milliseconds with result -90
+[error] [ Worker] - Access protection is enabled, can't read device version.
+[error] [ Worker] - Can't read memory descriptors, ap-protection is enabled.
+ERROR: The operation attempted is unavailable due to readback protection in
+ERROR: your device. Please use --recover to unlock the device.
+NOTE: For additional output, try running again with logging enabled (--log).
+NOTE: Any generated log error messages will be displayed.
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>nrfjprog --program feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_s140_6.1.1.hex --verify --reset
+[error] [ Client] - Encountered error -90: Command read_device_info executed for 15 milliseconds with result -90
+[error] [ Client] - Encountered error -90: Command read_memory_descriptors executed for 15 milliseconds with result -90
+[error] [ Worker] - Access protection is enabled, can't read device version.
+[error] [ Worker] - Can't read memory descriptors, ap-protection is enabled.
+ERROR: The file specified could not be found.
+NOTE: For additional output, try running again with logging enabled (--log).
+NOTE: Any generated log error messages will be displayed.
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>nrfjprog --eraseall
+[error] [ Client] - Encountered error -90: Command read_device_info executed for 15 milliseconds with result -90
+[error] [ Client] - Encountered error -90: Command read_memory_descriptors executed for 13 milliseconds with result -90
+[error] [ Worker] - Access protection is enabled, can't read device version.
+[error] [ Worker] - Can't read memory descriptors, ap-protection is enabled.
+ERROR: The operation attempted is unavailable due to readback protection in
+ERROR: your device. Please use --recover to unlock the device.
+NOTE: For additional output, try running again with logging enabled (--log).
+NOTE: Any generated log error messages will be displayed.
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>nrfjprog --program feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_s140_6.1.1.hex --verify --reset
+[error] [ Client] - Encountered error -90: Command read_device_info executed for 14 milliseconds with result -90
+[error] [ Client] - Encountered error -90: Command read_memory_descriptors executed for 14 milliseconds with result -90
+[error] [ Worker] - Access protection is enabled, can't read device version.
+[error] [ Worker] - Can't read memory descriptors, ap-protection is enabled.
+ERROR: The file specified could not be found.
+NOTE: For additional output, try running again with logging enabled (--log).
+NOTE: Any generated log error messages will be displayed.
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>make BOARD=feather_nrf52840_sense
+'cut' is not recognized as an internal or external command,
+operable program or batch file.
+The system cannot find the path specified.
+LD feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.out
+Memory region         Used Size  Region Size  %age Used
+           FLASH:       31800 B        38 KB     81.72%
+BOOTLOADER_CONFIG:          88 B         2 KB      4.30%
+ MBR_PARAMS_PAGE:          0 GB         4 KB      0.00%
+BOOTLOADER_SETTINGS:          4 KB         4 KB    100.00%
+             RAM:       25020 B       224 KB     10.91%
+       DBL_RESET:          0 GB          4 B      0.00%
+          NOINIT:          62 B        128 B     48.44%
+ UICR_BOOTLOADER:           4 B          4 B    100.00%
+UICR_MBR_PARAM_PAGE:           4 B          4 B    100.00%
+   text    data     bss     dec     hex filename
+  31888    1740   27446   61074    ee92 _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.out
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty.hex
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.hex
+Create update-feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.uf2
+Converted to uf2, output size: 73728, start address: 0x0
+Wrote 73728 bytes to _build/build-feather_nrf52840_sense/update-feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_nosd.uf2
+Create feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_s140_6.1.1.hex
+Zip created at _build/build-feather_nrf52840_sense/feather_nrf52840_sense_bootloader-0.9.2-29-g6a9a6a3-dirty_s140_6.1.1.zip
+
+D:\dfu nrf52840\Adafruit_nRF52_Bootloader>

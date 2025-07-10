@@ -1,0 +1,2 @@
+C:\Users\hiibr\AppData\Local\Temp\.arduinoIDE-unsaved2025610-18464-1i6p2db.7rnw\sketch_jul10b>adafruit-nrfutil dfu genpkg --dev-type 0x0052 --application "C:\Users\hiibr\AppData\Local\Temp\.arduinoIDE-unsaved2025610-18464-1i6p2db.7rnw\sketch_jul10b\build\adafruit.nrf52.feather52840sense\sketch_jul10b.ino.hex" --application-version 0 --sd-req 0xB6 --dfu-ver 0 dfu_app_only.zip
+Zip created at dfu_app_only.zip
